@@ -37,3 +37,25 @@
 .nav-lista a:hover{
     color: red;
 }
+
+.container-nav h1{
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #331B3B;
+}
+
+.container-nav button{
+    font-weight: 700;
+    color: black;
+    padding: 9px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/*body*/
+
