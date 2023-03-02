@@ -1,0 +1,39 @@
+*{
+    background-color: antiquewhite;
+}
+/*header*/
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.nav-lista{
+    list-style: none;
+}
+
+.nav-lista li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-lista li:hover{
+    transform: scale(1.1);
+}
+
+.nav-lista a{
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #331B3B;
+}
+
+.nav-lista a:hover{
+    color: red;
+}
