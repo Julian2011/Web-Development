@@ -275,70 +275,7 @@
 
 
 /* footer */
-footer{
-    margin-top: 5px;
-    padding-top: 180px;
-    
-}
 
-.container-footer{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
-.texto-footer{
-    background-color: black;
-    grid-column: 1;
-    padding: 0 10%;
-}
-
-.texto-footer h2{
-    background: black;
-    color: white;
-}
-
-.texto-footer p{
-    background: black;
-    color: white;
-}
-
-.texto-footer a{
-    background: black;
-    color: white;
-    text-decoration: none;
-}
-
-.formulario-footer{
-    background: black;
-    grid-column: 2;
-}
-
-.formulario-footer{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,1fr);
-}
-
-.footer-name input #nombre{
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.footer-email input #email{
-    width: 100px;
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.footer-phone input #telefono{
-    grid-row: 2;
-    grid-column: 1;
-}
-
-.footer-pais input #pais{
-    grid-column: 2;
-    grid-row: 2;
-}
 
 
 
