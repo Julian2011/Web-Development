@@ -176,9 +176,9 @@
 /* nosotros */
 .container-nosotros{
     display: grid;
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-rows: 1fr 1fr 50px; 
     grid-template-columns: repeat(2, 1fr);
-    padding: 150px 10%;
+    padding: 200px 10%;
 }
 
 .container-nosotros img{
@@ -225,6 +225,124 @@
 .container-nosotros button:hover{
     cursor: pointer;
 }
+
+/* trabajos realizaods */
+
+.container-trabajos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding: 5px 10%;
+}
+
+.container-trabajos h2{
+    width: 434px;
+    height: 102px;
+    left: 50px;
+    top: 2367px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 106.3%;
+    color: #331B3B;
+    grid-column: 1;
+}
+.container-trabajos p{
+    width: 515px;
+    height: 82px;
+    left: 835px;
+    top: 2378px;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 146.3%;
+    color: #331B3B;
+    grid-column: 2;
+    
+}
+
+/* cards trabajosb */
+
+.card-img-job img{
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/* comentarios */
+
+
+/* footer */
+footer{
+    margin-top: 5px;
+    padding-top: 180px;
+    
+}
+
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.texto-footer{
+    background-color: black;
+    grid-column: 1;
+    padding: 0 10%;
+}
+
+.texto-footer h2{
+    background: black;
+    color: white;
+}
+
+.texto-footer p{
+    background: black;
+    color: white;
+}
+
+.texto-footer a{
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+.formulario-footer{
+    background: black;
+    grid-column: 2;
+}
+
+.formulario-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.footer-name input #nombre{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.footer-email input #email{
+    width: 100px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.footer-phone input #telefono{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.footer-pais input #pais{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+
 
 
 
