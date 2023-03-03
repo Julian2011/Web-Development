@@ -273,6 +273,31 @@
 
 /* comentarios */
 
+.container-comentarios{
+    padding: 130px 10%;
+}
+
+.container-comentarios h2{
+    text-align: center;
+}
+
+.comentarios-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.posicion1{
+    width: 448px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.posicion2{
+    width: 448px;
+    grid-row: 1;
+    grid-column: 2;
+}
+
 
 /* footer */
 
