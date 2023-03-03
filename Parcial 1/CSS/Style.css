@@ -93,18 +93,23 @@
     grid-row: 1/4;
 }
 
-.button-inicio {
-    background: #331B3B;
+.container-inicio button{
     text-align: center;
-    letter-spacing: 3px;
-    width: 160px;
-    height: 60px;
+    width: 207px;
+    height: 66px;
+    left: 50px;
+    top: 634px;
     border: none;
+    border-radius: 20px;
+    background: #331B3B;
     color: white;
-    border-radius: 4px;
-    font-size: 20px;
-    outline: none;
-    text-decoration: none;
+    font-size: 17px;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.container-inicio button:hover{
+    cursor: pointer;
 }
 
 /* cards */
@@ -168,21 +173,58 @@
     align-items: center;
 }
 
-.card-footer button{
-    width: 150px;
-    background-color: black;
-    color: white;
-    border-radius: 15px;
-    border: 2px solid black;
-    padding: 6px;
-    font-size: 17px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    transition: 0.2s;    
+/* nosotros */
+.container-nosotros{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
+    padding: 150px 10%;
 }
 
-.card-footer button:hover{
-    background-color: white;
-    color: black;
-    border: 2px solid black;
+.container-nosotros img{
+    grid-column: 1;
+    grid-row: 1/4;
 }
+
+.container-nosotros h2{
+    color: #331B3B;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 106.3%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.container-nosotros p{
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 146.3%;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.container-nosotros button{
+    text-align: center;
+    width: 207px;
+    height: 66px;
+    left: 50px;
+    top: 634px;
+    border: none;
+    border-radius: 20px;
+    background: #331B3B;
+    color: white;
+    font-size: 17px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.container-nosotros button:hover{
+    cursor: pointer;
+}
+
+
+
