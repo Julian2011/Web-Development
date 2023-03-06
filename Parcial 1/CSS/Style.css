@@ -39,8 +39,7 @@
     margin-right: 2%;
 }
 
-.container-nav h1{
-    font-family: 'Playfair Display';
+.container-nav img{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
@@ -50,7 +49,6 @@
     line-height: 28px;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #331B3B;
 }
 
 .container-nav button{
@@ -299,29 +297,46 @@
 
 /* comentarios */
 
-.container-comentarios{
-    padding: 130px 10%;
+.testimonial-container h1{
+	text-align: center;
 }
 
-.container-comentarios h2{
-    text-align: center;
-}
-
-.comentarios-grid{
+.contentTestimonial {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    width: 60%;
+    margin: 20px auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+.cart1{
+	margin-right: 20px;
+}
+.cart2{
+	margin-right: 20px;
+}
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+#Icons{
+	font-size: 45px;
+	color: yellow;
+}
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
 }
 
-.posicion1{
-    width: 448px;
-    grid-column: 1;
-    grid-row: 1;
-}
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 20px 30px;
+  }
 
-.posicion2{
-    width: 448px;
-    grid-row: 1;
-    grid-column: 2;
+  .fa-quote {
+    display: none;
+  }
 }
 
 
