@@ -1,3 +1,9 @@
+:root{
+    --color-main: #FDC221;
+    --color-letra: #331B3B;
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +18,8 @@
     justify-content: space-between;
     align-items: center;
     height: 85px;
+    margin-left: 20px;
+    padding: 40px;
 }
 .container-nav li{
     display: inline-block;
@@ -29,7 +37,7 @@
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-    color: #331B3B;
+    color: var(--color-letra);
 }
 
 .container-nav a:hover{
@@ -50,7 +58,7 @@
     line-height: 28px;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #331B3B;
+    color: var(--color-letra);
 }
 
 .container-nav button{
@@ -71,16 +79,18 @@
     align-items: center;
     margin-left: 40px;
     position: relative;
+    padding-left: 20px;
+    padding-top: 20px;
    
     
 }
 .rectangulo{
     width: 250px ;
     height: 15px;
-    background-color: gold;
+    background-color: var(--color-main);
     position: absolute;
-    left: 5px;
-    top: 315px;
+    left: 25px;
+    top: 300px;
     z-index: -1;
   
 }
@@ -92,6 +102,7 @@
     line-height: 100%;
     grid-column: 1;
     grid-row: 1;
+    color: var(--color-letra);
 }
 
 .container-inicio b{
@@ -102,11 +113,17 @@
     line-height: 100%;
     grid-column: 1;
     grid-row: 1;
+    color: var(--color-letra);
 }
 
 .container-inicio p{
     grid-column: 1;
     grid-row: 2;
+    font-family: 'Hind Vadodara';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-letra);
 }
 
 .container-inicio a{
@@ -129,7 +146,7 @@
     top: 634px;
     border: none;
     border-radius: 20px;
-    background: #331B3B;
+    background: var(--color-letra);
     color: white;
     font-size: 17px;
     grid-row: 3;
@@ -140,26 +157,80 @@
     cursor: pointer;
 }
 
+
+.servicio{
+    display: flex ;
+    width: 95%;
+    margin-top: 150px;
+    background-color: #E3F3F3;
+    padding-top: 5px;
+    justify-content: center;
+    height: 578px;
+    position: relative;
+    border-radius: 0px 400px 0px 0px;
+    z-index: 5;
+}
+.rectangulo-negocios{
+    width: 170px ;
+    height: 10px;
+    background-color: var(--color-main);
+    position: absolute;
+    left: 670px;
+    top: 170px;
+    z-index: -1;
+    
+
+}
+.eclipse{
+box-sizing: border-box;
+position: absolute;
+width: 532px;
+height: 498px;
+left: 810px;
+top: 1100px;
+border-radius: 50%; 
+border: 2px dashed rgba(0, 0, 0, 0.26);
+z-index: 2;
+}
+
 /* cards */
 
 .titulo-servicio{
+    
+    margin-top: 70px;
     text-align: center;
     font-family: 'Hind Vadodara';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 106.3%;
-    color: #331B3B;
+    color: var(--color-letra);
 }
 
-.container{
+.container-ser{
+    
+    position: absolute;
+    top: 40%;
+    left: 15%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     height: 85px;
     padding-top: 5px;
     padding-bottom: 50px;
+    
 }
+.container{
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 85px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    
+}
+
 
 .cards{
     width: 300px;
@@ -168,7 +239,9 @@
     border-radius: 10px;
     transition: 0.2s;
 }
-
+.card-body {
+    margin: 10px;
+}
 .cards:hover{
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
@@ -199,12 +272,24 @@
     align-items: center;
 }
 
+
 /* nosotros */
 .container-nosotros{
     display: grid;
     grid-template-rows: 1fr 1fr 50px; 
     grid-template-columns: repeat(2, 1fr);
     padding: 200px 10%;
+    position: relative;
+}
+.rectangulo-nosotros{
+    width: 76px ;
+    height: 10px;
+    background-color: var(--color-main);
+    position: absolute;
+    left: 865px;
+    top: 290px;
+    z-index: -1;
+  
 }
 
 .container-nosotros img{
@@ -213,7 +298,7 @@
 }
 
 .container-nosotros h2{
-    color: #331B3B;
+    color: var(--color-letra);
     font-family: 'Hind Vadodara';
     font-style: normal;
     font-weight: 700;
@@ -224,6 +309,7 @@
 }
 
 .container-nosotros p{
+    margin-top: -50px ;
     font-family: 'Hind Vadodara';
     font-style: normal;
     font-weight: 400;
@@ -241,8 +327,8 @@
     top: 634px;
     border: none;
     border-radius: 20px;
-    background: #331B3B;
-    color: white;
+    background: var(--color-letra);
+    color:white;
     font-size: 17px;
     grid-column: 2;
     grid-row: 3;
@@ -271,7 +357,7 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 106.3%;
-    color: #331B3B;
+    color: var(--color-letra);
     grid-column: 1;
 }
 .container-trabajos p{
@@ -284,7 +370,7 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 146.3%;
-    color: #331B3B;
+    color: var(--color-letra);
     grid-column: 2;
     
 }
