@@ -15,12 +15,45 @@
 
 .container-nav{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+   
     align-items: center;
     height: 85px;
     margin-left: 20px;
     padding: 40px;
+    
 }
+.nameEmpresaprin{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.nameEmpresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40px;
+   
+}
+.menucompleto{
+    width: 100%;
+    display: flex;
+   
+   justify-content: space-between;
+}
+/*
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#menu2{
+
+    justify-content: end;
+}*/
 .container-nav li{
     display: inline-block;
     padding: 0 20px;
@@ -43,11 +76,18 @@
 .container-nav a:hover{
     color: red;
 }
+.container-nav .nav-lista{
+   justify-content: start;
+   
+}
 .container-nav .social{
     margin-right: 2%;
+    flex-direction: row;
+   justify-content: end;
+  
 }
-
-.container-nav img{
+.container-nav h1{
+    font-family: 'Playfair Display';
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
@@ -57,24 +97,44 @@
     line-height: 28px;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #331B3B;
+    color: var(--color-letra);
 }
 
-.container-nav button{
-    font-weight: 700;
-    color: black;
-    padding: 9px 25px;
-    background: white;
-    border: none;
-    border-radius: 50px;
+
+
+.icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #eeeeeefa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+   
+
 }
+#check{
+    display: none;
+}
+
+
+
+
+
+
 
 /*body*/
 
 .container-inicio{
     display: grid;
+    grid-template-columns: 1fr 870px;
     align-items: center;
     margin-left: 40px;
     position: relative;
@@ -89,7 +149,7 @@
     background-color: var(--color-main);
     position: absolute;
     left: 25px;
-    top: 300px;
+    top: 360px;
     z-index: -1;
   
 }
@@ -131,7 +191,7 @@
 }
 
 .container-inicio img{
-    
+    width: 100%;
     grid-column: 2;
     grid-row: 1/4;
     
@@ -698,6 +758,176 @@ footer {
     
 
 }
+
+
+/* Responsive Desing - Adaptable a dispositivos moviles */
+
+/* menu */
+@media screen and (max-width:870px) {
+
+    .container-nav{
+        position: fixed;
+        z-index: 50;
+        background-color: white;
+        width: 100%;
+        top:0px;
+        left: 0px;
+    }
+.menucompleto{
+  
+   width: 60%;
+   height: 100vh;
+   position: fixed;
+   top: 80px;
+   left: -100%;
+   background-color: #E3F3F3;
+   overflow: hidden;
+   z-index: 20;
+   box-shadow: 10px 0  20px -25px black;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   transition: all .5s;
+   
+}
+
+#check:checked ~ .menucompleto{
+  left: 0;
+}
+.container-nav .nav-lista{
+   
+   
+   margin-top: 400px;
+   display: flex;
+   
+   columns: 1;
+   flex-direction: column;
+   margin: 2px 2px;
+   height: 220px;
+   width: 100%;
+  
+   justify-content: center;
+   align-items: center;
+   align-content: space-between;
+   
+   
+}
+.container-nav .social{
+    margin: 2px 2px;
+    display: flex;
+    margin-top: 0px;
+   columns: 2;
+   flex-direction: column;
+   height: 150px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   align-content: space-between;
+   
+}
+.social li, .nav-lista li{
+    margin-top: 20px;
+}
+
+.nameEmpresa{
+    display: none;
+}
+.nameEmpresaprin{
+    display: flex;
+}
+
+
+.container-inicio{
+    top: 80px;
+    
+}
+.icon-menu{
+    display: flex;
+    z-index: 60;
+    margin-right: 30px;
+}
+
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+
+    .container-inicio{
+        margin-top: 100px;
+        max-width: 1000px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        margin: 20px;
+        
+    }
+    .container-inicio h1, .container-inicio p, .container-inicio button{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .container-inicio img{
+        margin-top: 10px;
+        justify-content: center;
+       display: flex;
+       border-top-right-radius: 120px 120px;
+    }
+    .rectangulo{
+        display: none;
+    }
+
+
+    /* servicios */
+    .servicio{
+        height: 900px;
+    }
+    .container-ser{
+        margin-top: -120px;
+    }
+    .rectangulo-negocios, .eclipse{
+        display: none;
+    }
+
+
+    /* Nosotros */
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:700px) {
