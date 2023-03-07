@@ -346,6 +346,15 @@ z-index: 2;
     position: relative;
 }
 
+.contenido-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+   
+    height: 500px;
+    grid-column: 2;
+}
 .rectangulo-nosotros{
     width: 76px ;
     height: 10px;
@@ -369,8 +378,7 @@ z-index: 2;
     font-weight: 700;
     font-size: 48px;
     line-height: 106.3%;
-    grid-column: 2;
-    grid-row: 1;
+   
 }
 
 .container-nosotros p{
@@ -380,8 +388,7 @@ z-index: 2;
     font-weight: 400;
     font-size: 17px;
     line-height: 146.3%;
-    grid-column: 2;
-    grid-row: 2;
+ 
 }
 
 .container-nosotros button{
@@ -395,8 +402,7 @@ z-index: 2;
     background: var(--color-letra);
     color:white;
     font-size: 17px;
-    grid-column: 2;
-    grid-row: 3;
+   
 }
 
 .container-nosotros button:hover{
@@ -406,7 +412,7 @@ z-index: 2;
 /* trabajos realizados */
 
 .trabajosrealizados{
-
+    
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -420,7 +426,7 @@ z-index: 2;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(1,1fr);
     padding: 5px 10%;
-    
+   
     
 }
 .rectangulofondo{
@@ -846,6 +852,13 @@ footer {
     z-index: 60;
     margin-right: 30px;
 }
+.trabajosrealizados{
+    height: 1500px ;
+}
+.container-tarjetas{
+    margin-top: -100px;
+}
+
 
 
 
@@ -898,40 +911,72 @@ footer {
 
 
     /* Nosotros */
+    .container-nosotros{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .rectangulo-nosotros{
+        display: none;
+    }
+    
+    /* Trabajos realizados */
+
+    .container-trabajos{
+        margin-top: 100px;
+       display: flex;
+       flex-direction: column;
+       align-content: start;
+       justify-content: start;
+       height: 400px;
+    
+      
+    }
+    .container-tarjetas{
+        margin-top: -50px;
+
+    }
+    
+    /* Testimonios */
+
+    .testimonial-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        margin-top: 300px;
+        
+    }
+    .contentTestimonial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .cart1-2{
+        margin-top: 20px;
+        
+    }
 
     
     
 }
 
+@media screen and (max-width:485px) {
+    .contenido-nosotros{
+        height: 600px;
+    }
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
     footer {
+        margin-top: 300px;
         position: relative;
         bottom: 0px;
     }
