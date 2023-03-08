@@ -86,6 +86,21 @@
    justify-content: end;
   
 }
+.container-nav .social a{
+    text-decoration: none;
+    color: var(--color-letra);
+    border-radius: 50%;
+    border: 1px solid #331B3B;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    line-height: 35px;
+
+}
 .container-nav h1{
     font-family: 'Playfair Display';
     display: grid;
@@ -340,7 +355,7 @@ z-index: 2;
 /* nosotros */
 .container-nosotros{
     display: grid;
-    grid-template-rows: 1fr 1fr 50px; 
+    grid-template-rows: 1fr 50px; 
     grid-template-columns: repeat(2, 1fr);
     padding: 200px 10%;
     position: relative;
@@ -721,7 +736,7 @@ footer {
     width: 100%;
     border: none;
     outline: none;
-    background: var(--color-main);
+    background: #FE9A22;
     color: white;
     font-size: 1.0625rem;
     font-weight: 500;
@@ -732,9 +747,9 @@ footer {
     display: inline-block;
   
     text-decoration: none;
-    color: var(--color-main);
+    color: #FE9A22;
     border-radius: 50%;
-    border: 1px solid gold;
+    border: 1px solid #FE9A22;
     width: 40px;
     height: 40px;
     align-items: center;
@@ -811,6 +826,8 @@ footer {
    margin: 2px 2px;
    height: 220px;
    width: 100%;
+   font-size: 20px;
+   line-height: 35px;
   
    justify-content: center;
    align-items: center;
